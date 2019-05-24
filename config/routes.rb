@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   # get 'tasks/:id/edit', to: 'tasks#edit'
   
   # タスクの Router には resources を利用してください。
-  root to: 'tasks#index'
+  root to: 'toppages#index'
   
-  resources :tasks
+  # resources :tasks
 end
