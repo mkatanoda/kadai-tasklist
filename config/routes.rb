@@ -16,7 +16,7 @@ Rails.application.routes.draw do
   # get 'tasks/:id/edit', to: 'tasks#edit'
   
   # タスクの Router には resources を利用してください。
-  root to: 'toppages#index'
+  root to: 'tasks#index'
   
   # resources :tasks
 
@@ -27,5 +27,5 @@ Rails.application.routes.draw do
   get 'signup', to: 'users#new'
   resources :users, only: [:index, :show, :new, :create]
   
-  resources :tasks, only: [:create, :edit, :update, :destroy]
+  resources :tasks
 end
